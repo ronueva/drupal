@@ -1,0 +1,6 @@
+name: I love drupal
+type: module
+description: A drupal module for contact list.
+package: Custom
+core: 8.x
+

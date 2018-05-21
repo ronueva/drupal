@@ -1,0 +1,27 @@
+i_love_drupal:
+  path: /ilovedrupal
+  defaults:
+    _controller: Drupal\i_love_drupal\Controller\ILoveDrupalController::index
+  requirements:
+    _permission: 'access content'
+
+i_love_drupal.addContactForm:
+  path: /ilovedrupal/addContact
+  defaults:
+    _controller: Drupal\i_love_drupal\Controller\ILoveDrupalController::addContact
+  requirements:
+    _permission: 'access content'
+
+i_love_drupal.editContactForm:
+  path: /ilovedrupal/editContact/{id}
+  defaults:
+    _controller: Drupal\i_love_drupal\Controller\ILoveDrupalController::editContact
+  requirements:
+    _permission: 'access content'
+
+i_love_drupal.deleteContactForm:
+  path: /ilovedrupal/deleteContact/{id}
+  defaults:
+    _controller: Drupal\i_love_drupal\Controller\ILoveDrupalController::deleteContact
+  requirements:
+    _permission: 'access content'
